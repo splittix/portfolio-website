@@ -262,10 +262,55 @@ button:focus,
     z-index             : -1;
     width               : 100%;
     height              : 100%;
-    background-image    : url(../img/LisaDeLuca.jpg);
+    background-image    : url(https://lisaseacat.com/img/LisaDeLuca.jpg);
     background-size     : cover;
     background-position : center top;
     }
+    .header .profile-usaa {
+        position            : absolute;
+        top                 : 0;
+        left                : 0;
+        z-index             : -1;
+        width               : 100%;
+        height              : 100%;
+        background-image    : url(https://lisaseacat.com/img/usaa/pascai.png);
+        background-size     : cover;
+        background-position : center top;
+        }
+    .header .open-linux {
+        position            : absolute;
+        top                 : 0;
+        left                : 0;
+        z-index             : -1;
+        width               : 100%;
+        height              : 100%;
+        background-image    : url(https://lisaseacat.com/img/keynotes/tux.png);
+        background-size     : cover;
+        background-position : center top;
+        }
+.header .mbi {
+        position            : absolute;
+        top                 : 0;
+        left                : 0;
+        z-index             : -1;
+        width               : 100%;
+        height              : 100%;
+        background-image    : url(https://lisaseacat.com/img/keynotes/MBIwolf.png);
+        background-size     : cover;
+        background-position : center top;
+        }
+.header .profile-rex {
+        position            : absolute;
+        top                 : 0;
+        left                : 0;
+        z-index             : -1;
+        width               : 100%;
+        height              : 100%;
+        background-image    : url(https://lisaseacat.com/img/keynotes/rexai.png);
+        background-size     : cover;
+        background-position : center top;
+        }
+
 
 .header .profile-img:before {
     content    : "";
@@ -400,6 +445,7 @@ button:focus,
     top              : 5px;
     padding          : 0 8px;
     border-radius    : 3px;
+    right: 0px;
     }
 
 .progress-item .progress-percent::before {
@@ -552,7 +598,7 @@ button:focus,
 
 #status,
 .status-mes {
-    background-image    : url(../img/puff.svg);
+    background-image    : url(https://lisaseacat.com/img/puff.svg);
     background-position : center;
     background-repeat   : no-repeat;
     height              : 200px;

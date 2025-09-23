@@ -722,26 +722,27 @@ To help you learn and understand the ever-changing landscape of technology, we a
                 <div class="feedback-form">
                     <h2>Get in touch</h2>
 
-                    <div id="contact-form">
+                    <form id="contact-form" action="mailto:lisa@lisaseacat.com?subject=A question from lisaseacat.com" method="post" enctype="text/plain" onsubmit="location.href='index.html';" target="_top">
                         <div class="form-group">
                             <label for="InputName">Name</label>
-                            <input type="text" class="form-control" id="name"
+                            <input type="text" name="name" required="" class="form-control" id="name"
                                    placeholder="Full Name">
                         </div>
                         <div class="form-group">
                             <label for="InputEmail">Email address</label>
-                            <input type="email" class="form-control" id="email"
+                            <input type="email" name="email" required="" class="form-control" id="email"
                                    placeholder="Email">
                         </div>
                         <div class="form-group">
                             <label for="message-text" class="control-label">Message</label>
-                            <textarea class="form-control" rows="4" id="message"
+                            <textarea class="form-control" rows="4" required="" name="message" id="message"
                                       placeholder="Write message"></textarea>
                         </div>
 
-                        <button type="button" class="btn btn-primary" onclick="sendEmail();">Send Email</button>
+                        <button type="submit" class="btn btn-primary" onclick="return sendEmail();">Submit</button>
                         <div class="ajax-response"></div>
-                    </div>                </div>
+                    </form>
+                </div>
                 <!-- .feedback-form -->
 
 
@@ -783,23 +784,5 @@ To help you learn and understand the ever-changing landscape of technology, we a
 
 <script src="js/lisaseacat.js"></script>
 <script src="js/scripts.js"></script>
-<script>
-function sendEmail() {
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
-    
-    const subject = "Message from " + (name || "Website Contact Form");
-    const body = "Name: " + (name || "Not provided") + "\n" +
-                 "Email: " + (email || "Not provided") + "\n" +
-                 "Message: " + (message || "No message provided");
-    
-    const mailtoLink = "mailto:lisa@lisaseacat.com?subject=" + 
-                       encodeURIComponent(subject) + 
-                       "&body=" + 
-                       encodeURIComponent(body);
-    
-    window.location.href = mailtoLink;
-}
-</script></body>
+</body>
 </html>
